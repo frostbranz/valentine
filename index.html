@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>💘 Walentynki 💘</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
+  <div class="container" id="main">
     <h1>Zostaniesz moją walentynką? 💖</h1>
 
     <img id="heart" src="images (1).jpeg" alt="serce">
 
     <div class="buttons">
-      <button id="yes">TAK</button>
-      <button id="no">NIE</button>
+      <button id="yes" type="button">TAK</button>
+      <button id="no" type="button">NIE</button>
     </div>
 
     <p id="message"></p>
   </div>
 
-  <canvas id="confetti"></canvas>
+  <div class="error-screen" id="error">
+    <h1>503 Service Unavailable</h1>
+    <p>Wystąpił nieoczekiwany błąd serwera.</p>
+    <p>Spróbuj ponownie później.</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
